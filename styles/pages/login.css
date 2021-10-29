@@ -1,0 +1,39 @@
+* {
+    font-family: "roboto-bold";
+}
+
+body {
+    /* margin: auto; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 8vw);
+    grid-template-rows: auto;
+    height: 100vh;
+}
+
+.image {
+    background-image: url(/images/pages/login/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: grid;
+    grid-column-end: 7;
+    grid-column-start: 1;
+    grid-template-columns: repeat(6, auto);
+}
+
+.login {
+    background-color: aquamarine;
+    border: red solid 1px;
+    display: grid;
+    grid-column-end: 13;
+    grid-column-start: 7;
+    grid-template-columns: repeat(6, auto);
+}
+
+.login-title {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 82px;
+}
