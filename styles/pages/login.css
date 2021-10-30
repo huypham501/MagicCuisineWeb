@@ -1,16 +1,18 @@
 * {
-    font-family: "roboto-bold";
+    
 }
 
-body {
-    /* margin: auto; */
+body {    
+    font-family: "roboto-regular";
+    height: 900px
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(12, 8vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 100vh;
+    height: inherit;
+    
 }
 
 .image {
@@ -18,22 +20,87 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: grid;
-    grid-column-end: 7;
+    grid-column-end: 6;
     grid-column-start: 1;
     grid-template-columns: repeat(6, auto);
+    
 }
 
 .login {
     background-color: aquamarine;
-    border: red solid 1px;
+    border: red solid 5px;
     display: grid;
     grid-column-end: 13;
-    grid-column-start: 7;
-    grid-template-columns: repeat(6, auto);
+    grid-column-start: 6;
+    grid-template-columns: repeat(7, 1fr);   
 }
 
-.login-title {
+.login-container {
+    border: red solid 1px;
+    grid-column-end: 6;
     grid-column-start: 2;
-    grid-column-end: 5;
+}
+
+.title-section {
+    border: red solid 1px;
+}
+
+.title {
+    border: red solid 1px;
+    font-family: "roboto-bold";
     font-size: 82px;
 }
+
+.description {
+    border: red solid 1px;
+    font-size: 20px;
+}
+
+.authentication-section {
+    border: red solid 1px;
+    grid-column-end: 6;
+    grid-column-start: 2;
+}
+
+.input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    outline: 0;
+    width: 100%;
+}
+
+.input::-webkit-input-placeholder {
+    color: black;
+}
+
+.verify-section {
+    border: red solid 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.save-login-section {
+    border: red solid 1px;
+}
+
+.forget-password-section {
+    border: red solid 1px;
+}
+
+.forget-password {
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+.save-login {
+    border: red solid 1px;
+}
+
+.login-button {
+    
+}
+
