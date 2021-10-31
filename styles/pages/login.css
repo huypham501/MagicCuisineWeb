@@ -4,15 +4,13 @@
 
 body {    
     font-family: "roboto-regular";
-    height: 900px
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: inherit;
-    
+    height: 900px;
 }
 
 .image {
@@ -22,13 +20,12 @@ body {
     display: grid;
     grid-column-end: 6;
     grid-column-start: 1;
-    grid-template-columns: repeat(6, auto);
-    
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .login {
-    background-color: aquamarine;
-    border: red solid 5px;
+    /* background-color: aquamarine; */
+    /* border: red solid 5px; */
     display: grid;
     grid-column-end: 13;
     grid-column-start: 6;
@@ -36,30 +33,33 @@ body {
 }
 
 .login-container {
-    border: red solid 1px;
-    grid-column-end: 6;
+    /* border: red solid 1px; */
+    grid-column-end: 7;
     grid-column-start: 2;
+    margin: auto 0;
 }
 
 .title-section {
-    border: red solid 1px;
+    /* border: red solid 1px;     */
 }
 
 .title {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     font-family: "roboto-bold";
     font-size: 82px;
 }
 
 .description {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .authentication-section {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     grid-column-end: 6;
     grid-column-start: 2;
+    margin-top: 70px;
 }
 
 .input {
@@ -67,7 +67,8 @@ body {
     border: 0;
     border-bottom: 1px solid black;
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
+    margin-top: 20px;
     outline: 0;
     width: 100%;
 }
@@ -77,30 +78,42 @@ body {
 }
 
 .verify-section {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     display: grid;
+    font-size: 15px;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
 }
 
 .save-login-section {
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
 .forget-password-section {
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
 .forget-password {
-    float: right;
-    text-decoration: none;
     color: black;
+    float: right;
 }
 
 .save-login {
-    border: red solid 1px;
+    /* border: red solid 1px; */
+}
+
+.login-button-section {
+    /* border: red solid 1px; */
+    margin-top: 50px;
+    text-align: center;
 }
 
 .login-button {
-    
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-family: "roboto-bold";
+    font-size: 15px;
+    padding: 10px 50px;
 }
 
