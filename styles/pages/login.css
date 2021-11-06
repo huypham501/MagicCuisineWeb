@@ -18,7 +18,7 @@ body {
     background-size: 100% auto;
     grid-column-end: 6;
     grid-column-start: 1;
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
 .move-signup-container {
@@ -45,7 +45,7 @@ body {
 
 .login {
     /* background-color: aquamarine; */
-    border: red solid 5px;
+    /* border: red solid 5px; */
     display: grid;
     grid-column-end: 13;
     grid-column-start: 6;
