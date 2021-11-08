@@ -1,0 +1,54 @@
+.container {
+    border: red solid 1px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.user-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 200px;
+}
+
+.avatar-container {
+    border: red solid 1px;
+    grid-column-end: 3;
+    grid-column-start: 1;
+}
+
+.description-container {
+    border: red solid 1px;
+    grid-column-end: 13;
+    grid-column-start: 3;
+    position: relative;
+}
+
+.description-container .name {
+    border: red solid 1px;
+    font-family: "roboto-regular";
+    font-size: 38px;
+}
+
+.description-container .description {
+    border: red solid 1px; 
+    font-family: "roboto-regular"; 
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.description-container .social-media-icon {
+    border: red solid 1px;
+    bottom: 0;
+    position: absolute;
+}
+
+.description-container .social-media-icon .icon {
+    color: #AAC29F;
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+.description-container .social-media-icon .icon a {
+    color: inherit;
+}

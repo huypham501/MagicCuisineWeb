@@ -1,21 +1,20 @@
-.container {
+.container-menu-bar {
     /* border: red solid 1px; */
     margin: 0 auto;
-    width: 80%;
 }
 
-.container::after {
+.container-menu-bar::after {
     clear: both;
     content: "";
     display: table;
 }
 
-.logo {
+.logo-menu-bar {
     /* border: red solid 1px; */
     float: left;
-    width: 5rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 5rem;
 }
 
 .menu-bar {
@@ -23,25 +22,25 @@
     float: right;
 }
 
-ul.menu {
+.menu-bar ul.menu {
     border-top: #555555 solid 2px;
     list-style: none;    
 }
 
-ul.menu .item {
+.menu-bar ul.menu .item {
     /* border: red solid 1px; */
     display: inline-block;
-    padding: 15px;
     margin-left: 40px;
+    padding: 15px;
 }
 
-ul.menu .item a {
-    text-decoration: none;
-    font-family: "roboto-light";
+.menu-bar ul.menu .item a {
     color: black;
+    font-family: "roboto-light";
+    text-decoration: none;
 }
 
-ul.menu .direct-container .icon {
+.menu-bar ul.menu .direct-container .icon {
     display: inline-block;
     margin: 0 0.25rem;
 }
