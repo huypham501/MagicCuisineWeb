@@ -1,0 +1,89 @@
+* {
+    background-color: #FCEBE6;
+}
+
+.container {
+    /* border: red solid 1px; */
+    margin: 0 auto;
+    width: 80%;
+}
+
+.content-container {
+    border: red solid 1px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 35rem;
+}
+
+.news-container {
+    border: red solid 1px;
+    display: grid;
+    grid-column-end: 10;
+    grid-column-start: 1;
+    grid-template-columns: repeat(9, 1fr);
+    height: inherit;
+}
+
+.news-container .image-container {
+    border: red solid 1px;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    height: inherit;
+}
+
+.news-container .image-container img.image {
+    border: red solid 1px;
+    display: block;
+    height: inherit;
+    object-fit: cover;
+    width: 100%;
+}
+
+.news-container .news-information {
+    border: red solid 1px;
+    margin-left: 3rem;
+}
+
+.news-container .news-information {
+    border: red solid 1px;
+    grid-column-end: 9;
+    grid-column-start: 4;
+    position: relative;
+}
+
+.news-container .news-information .title {
+    border: red solid 1px;
+    font-family: "raleway-bold";
+    margin-top: 1rem;
+}
+
+.news-container .news-information .heading {
+    border: red solid 1px;
+    font-family: "raleway-bold";
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.news-container .news-information .description {
+    border: red solid 1px;
+    font-family: "roboto-light";
+    margin-top: 1rem;
+}
+
+.news-container .news-information .more-button-container {
+    border: red solid 1px;
+    bottom: 0;
+    position: absolute;
+}
+
+.news-container .news-information button.more-button {
+    background-color: transparent;
+    background-color: black;
+    border: red solid 1px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: "roboto-bold";
+    font-size: 15px;
+    padding: 10px 50px;
+}

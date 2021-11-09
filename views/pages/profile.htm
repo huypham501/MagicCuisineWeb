@@ -25,7 +25,10 @@
                         Skyler Meo
                     </div>
                     <div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates unde earum amet facere quis natus mollitia ipsum. Eos dolorem maiores voluptatibus rem voluptatum, tenetur provident cumque nam totam tempore numquam eius, ducimus laboriosam aperiam accusantium dolores. Quia sequi error autem minus ea unde optio quasi, aliquid similique molestias provident dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates unde earum amet facere quis
+                        natus mollitia ipsum. Eos dolorem maiores voluptatibus rem voluptatum, tenetur provident cumque
+                        nam totam tempore numquam eius, ducimus laboriosam aperiam accusantium dolores. Quia sequi error
+                        autem minus ea unde optio quasi, aliquid similique molestias provident dolore.
                     </div>
                     <div class="social-media-icon">
                         <div class="icon facebook">
@@ -186,7 +189,13 @@
     </div>
 
     <script>
-        $('#menu-bar').load('/views/partials/menu_bar.htm');
+        $('#menu-bar').load('/views/partials/menu_bar.htm', function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success")
+            {
+                // console.log(document.getElementById("myfeed-menu-bar-item").style.fontFamily);
+                // document.getElementById("myfeed-menu-bar-item").style.fontFamily = "roboto-bold";
+            }
+        });
     </script>
 </body>
 

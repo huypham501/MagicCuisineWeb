@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGIC CUISINE - Profile</title>
+    <link rel="stylesheet" href="/styles/pages/news.css">
+    <link rel="stylesheet" href="/fonts/config/roboto.css">
+    <link rel="stylesheet" href="/fonts/config/raleway.css">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/images/global/logo_black.svg" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu-bar"></div>
+        <div class="content-container">
+            <div class="news-container">
+                <div class="image-container">
+                    <img src="/images/pages/news/news.jpg" alt="news" class="image">
+                </div>
+                <div class="news-information">
+                    <div class="title">
+                        TIN TỨC
+                    </div>
+                    <div class="heading">
+                        ẨM THỰC VIỆT NAM TỪNG BƯỚC CHINH PHỤC THẾ GIỚI
+                    </div>
+                    <div class="description">
+                        &emsp;&emsp;Món ăn Việt ngày càng được nhiều quốc gia trên thế giới biết đến. Điều đó càng được khẳng định,
+                        khi tháng 8/2012 vừa qua tại Faridabad, Ấn Độ, Tổ chức Kỷ lục châu Á đã chính thức công nhận và
+                        xác lập 12 món ăn Việt Nam đạt tiêu chí “Giá trị Ẩm thực châu Á”.
+                    </div>
+                    <div class="more-button-container">
+                        <button class="button more-button">XEM THÊM</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relate-post-container">
+                <div class="title-container">
+                    BÀI VIẾT LIÊN QUAN
+                </div>
+                <div class="list-item-container">
+                    <div class="item">
+                        <div class="image-container">
+                            <img src="/images/pages/news/relate-post/item-1.jpg" alt="item 1" class="image">
+                        </div>
+                        <div class="information-container">
+                            <div class="title">
+                                LOREM IPSUM DOLOR SIT.
+                            </div>
+                            <div class="description">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#menu-bar').load('/views/partials/menu_bar.htm', function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success") {
+                // console.log(document.getElementById("myfeed-menu-bar-item").style.fontFamily);
+                // document.getElementById("myfeed-menu-bar-item").style.fontFamily = "roboto-bold";
+            }
+        });
+    </script>
+</body>
+
+</html>
