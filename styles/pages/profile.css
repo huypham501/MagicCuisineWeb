@@ -1,54 +1,201 @@
 .container {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     margin: 0 auto;
     width: 80%;
 }
 
 .user-container {
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     height: 200px;
 }
 
-.avatar-container {
-    border: red solid 1px;
+.user-container .avatar-container {
+    /* border: red solid 1px; */
     grid-column-end: 3;
     grid-column-start: 1;
+    height: inherit;
 }
 
-.description-container {
-    border: red solid 1px;
+.user-container .avatar-container .user-avatar {
+    border-radius: 50%;
+    height: inherit;
+    object-fit: cover;
+    width: 100%;
+}
+
+.user-container .description-container {
+    /* border: red solid 1px; */
     grid-column-end: 13;
     grid-column-start: 3;
     position: relative;
+    margin-left: 2rem;
 }
 
-.description-container .name {
-    border: red solid 1px;
+.user-container .description-container .name {
+    /* border: red solid 1px; */
     font-family: "roboto-regular";
     font-size: 38px;
 }
 
-.description-container .description {
-    border: red solid 1px; 
-    font-family: "roboto-regular"; 
-    position: absolute; 
+.user-container .description-container .description {
+    /* border: red solid 1px; */
+    font-family: "roboto-regular";
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.description-container .social-media-icon {
-    border: red solid 1px;
+.user-container .description-container .social-media-icon {
+    /* border: red solid 1px; */
     bottom: 0;
     position: absolute;
 }
 
-.description-container .social-media-icon .icon {
+.user-container .description-container .social-media-icon .icon {
     color: #AAC29F;
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
-.description-container .social-media-icon .icon a {
+.user-container .description-container .social-media-icon .icon a {
     color: inherit;
+}
+
+.user-space-container .options-user-space {
+    margin: 3rem 0;
+}
+
+.user-space-container .options-user-space .option {
+    /* border: red solid 1px; */
+    display: inline-block;
+    margin-right: 6rem;
+    padding: 10px 0;
+}
+
+.user-space-container .options-user-space .option.saved-recipes {
+    border-bottom: #AAC29F solid 4px;
+}
+
+.user-space-container .options-user-space .option a {
+    color: black;
+    font-family: "roboto-regular";
+    text-decoration: none;
+}
+
+.title {
+    font-family: "roboto-medium";
+    font-size: 24px;
+}
+
+.all-recipes-container {
+    /* border: red solid 1px; */
+    margin: 2rem 0;
+}
+
+.all-recipes-container .title {
+    /* border: red solid 1px; */
+    margin: 1rem 0;
+}
+
+.all-recipes-container .empty-description a {
+    /* border: red solid 1px; */
+    color: #AAC29F;
+    font-family: "roboto-medium";
+    text-decoration: none;
+}
+
+.collection-container {
+    /* border: red solid 1px; */
+    margin: 2rem 0;
+}
+
+.collection-container .head-collection {
+    /* border: red solid 1px; */
+    width: inherit;
+}
+
+.collection-container .head-collection::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.collection-container .head-collection .title {
+    /* border: red solid 1px; */
+    float: left;
+}
+
+.collection-container .head-collection .sorter {
+    /* border: red solid 1px; */
+    float: right;
+    margin-right: 2rem;
+}
+
+.collection-container .head-collection .sorter .content {
+    /* border: red solid 1px; */
+    float: left;
+    font-family: "roboto-regular";
+    font-size: 1rem;
+}
+
+.collection-container .head-collection .sorter .chervon {
+    /* border: red solid 1px; */
+    float: right;
+    margin-left: 0.5rem;
+}
+
+.collection-container .head-collection .sorter .chervon a {
+    color: black;
+}
+
+.collection-container .content-collection ul.list-item {
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.collection-container .content-collection li.item {
+    /* border: red solid 1px; */
+    display: inline-block;
+    height: 16rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    width: 16rem;
+}
+
+.collection-container .content-collection .item .image-container {
+    /* border: red solid 1px; */
+    height: 80%;
+    width: inherit;
+}
+
+.collection-container .content-collection .item .image-container img {
+    /* border: red solid 1px; */
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    width: 100%;
+}
+
+.collection-container .content-collection .item .description-container {
+    /* border: red solid 1px; */
+    display: block;
+    font-family: "roboto-light";
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.collection-container .content-collection .item .description-container .name {
+    /* border: red solid 1px; */
+    float: left;
+    height: 100%;
+}
+
+.collection-container .content-collection .item .description-container .description {
+    /* border: red solid 1px; */
+    float: right;
+    height: 100%;
+    margin-right: 1rem;
 }
