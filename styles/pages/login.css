@@ -30,8 +30,8 @@ body {
 
 .button-move-signup {
     background-color: transparent;
-    cursor: pointer;
     border: black solid 1px;
+    cursor: pointer;
     font-family: "roboto-bold";
     font-size: 20px;
     letter-spacing: 3px;
@@ -133,10 +133,10 @@ body {
 }
 
 .login-button {
-    cursor: pointer;
     background-color: black;
     border-radius: 25px;
     color: white;
+    cursor: pointer;
     font-family: "roboto-bold";
     font-size: 15px;
     padding: 10px 50px;

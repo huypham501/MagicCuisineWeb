@@ -87,15 +87,15 @@ body {
 
     /* SOCIAL MEDIA ICON */
 .social-media-icon-container {
+    height: 50px;
     /* border: red solid 1px; */
     margin-top: 30px;
     text-align: center;
-    height: 50px;
 }
 
 .social-media-icon-container .icon {
-    margin: 0 15px;
     cursor: pointer;
+    margin: 0 15px;
 }
 
 .facebook-icon {
