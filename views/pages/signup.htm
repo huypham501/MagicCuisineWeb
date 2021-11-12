@@ -38,9 +38,12 @@
                     </button>
                 </div>
                 <div class="social-media-icon-container">
-                    <img onclick="window.open('https://www.facebook.com/')" class="icon facebook-icon" src="/images/pages/login_signup/facebook_icon.svg" alt="facebook icon">
-                    <img onclick="window.open('https://www.instagram.com/')" class="icon instagram-icon" src="/images/pages/login_signup/instagram icon.svg" alt="instagram icon">
-                    <img onclick="window.open('https://www.pinterest.com/')" class="icon pinterest-icon" src="/images/pages/login_signup/pinterest icon.svg" alt="pinterest icon">
+                    <img onclick="window.open('https://www.facebook.com/')" class="icon facebook-icon"
+                        src="/images/pages/login_signup/facebook_icon.svg" alt="facebook icon">
+                    <img onclick="window.open('https://www.instagram.com/')" class="icon instagram-icon"
+                        src="/images/pages/login_signup/instagram icon.svg" alt="instagram icon">
+                    <img onclick="window.open('https://www.pinterest.com/')" class="icon pinterest-icon"
+                        src="/images/pages/login_signup/pinterest icon.svg" alt="pinterest icon">
                 </div>
                 <div id="test"></div>
             </div>
@@ -54,15 +57,6 @@
             </div>
         </div>
     </div>
-    <script>
-        $('#menu-bar').load('/views/partials/menu_bar.htm', function (responseTxt, statusTxt, xhr) {
-            if (statusTxt == "success")
-            {
-                // console.log(document.getElementById("myfeed-menu-bar-item").style.fontFamily);
-                // document.getElementById("myfeed-menu-bar-item").style.fontFamily = "roboto-bold";
-            }
-        });
-    </script>
+    <script src="/src/load-menu-bar.js"></script>
 </body>
-
 </html>
