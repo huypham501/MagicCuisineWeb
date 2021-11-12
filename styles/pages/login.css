@@ -1,15 +1,17 @@
-* {
-    
-}
-
 body {    
     font-family: "roboto-regular";
+}
+
+.menu-bar-container{
+    margin: 0 auto;
+    width: 80%;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     height: 900px;
+    margin-top: 5rem;
 }
 
 .image {

@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="/styles/pages/signup.css">
     <link rel="stylesheet" href="/fonts/config/roboto.css">
     <link rel="icon" type="image/svg+xml" sizes="any" href="/images/global/logo_black.svg" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
+    <div class="menu-bar-container">
+        <div id="menu-bar"></div>
+    </div>
     <div class="container">
         <div class="signup">
             <div class="signup-container">
@@ -50,6 +54,15 @@
             </div>
         </div>
     </div>
+    <script>
+        $('#menu-bar').load('/views/partials/menu_bar.htm', function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success")
+            {
+                // console.log(document.getElementById("myfeed-menu-bar-item").style.fontFamily);
+                // document.getElementById("myfeed-menu-bar-item").style.fontFamily = "roboto-bold";
+            }
+        });
+    </script>
 </body>
 
 </html>
