@@ -41,6 +41,7 @@
 }
 
 .menu-bar ul.menu .direct-container .icon {
+    cursor: pointer;
     display: inline-block;
     margin: 0 0.25rem;
 }
