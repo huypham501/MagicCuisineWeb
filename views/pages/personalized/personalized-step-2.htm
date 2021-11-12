@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGIC CUISINE</title>
+    <link rel="stylesheet" href="/styles/pages/persionalized/personalized-step-2.css">
+    <link rel="stylesheet" href="/fonts/config/roboto.css">
+    <link rel="stylesheet" href="/fonts/config/raleway.css">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/images/global/logo_black.svg" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu-bar"></div>
+        <div class="content-container">
+            <div class="title">
+                Bạn có dị ứng với loại thực phẩm nào không?
+            </div>
+            <div class="list-option-container">
+                <ul class="list-option">
+                    <li class="item item-1">
+                        <div class="image-container">
+                            <img src="/images/pages/personalized/step-2/Beef.svg" alt="Beef svg" class="image">
+                        </div>
+                    </li>
+                    <li class="item item-2">
+                        <div class="image-container">
+                            <img src="/images/pages/personalized/step-2/Fish.svg" alt="Fish svg" class="image">
+                        </div>
+                    </li>
+                    <li class="item item-3">
+                        <div class="image-container">
+                            <img src="/images/pages/personalized/step-2/Wheat.svg" alt="Wheat svg" class="image">
+                        </div>
+                    </li>
+                    <li class="item item-4">
+                        <div class="image-container">
+                            <img src="/images/pages/personalized/step-2/Crab.svg" alt="Crab svg" class="image">
+                        </div>
+                    </li>
+                    <li class="item item-5">
+                        <div class="image-container">
+                            <img src="/images/pages/personalized/step-2/Nuts.svg" alt="Nuts svg" class="image">
+                        </div>
+                    </li>
+                    <li class="item item-6">
+                        <div class="image-container">
+                            <img src="/images/pages/personalized/step-2/Matsuke.svg" alt="Matsuke svg" class="image">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button class="button prev-button">QUAY LẠI</button>
+                <button class="button next-button">TIẾP THEO</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#menu-bar').load('/views/partials/menu_bar.htm', function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success") {
+                // console.log(document.getElementById("myfeed-menu-bar-item").style.fontFamily);
+                // document.getElementById("myfeed-menu-bar-item").style.fontFamily = "roboto-bold";
+            }
+        });
+    </script>
+</body>
+
+</html>
