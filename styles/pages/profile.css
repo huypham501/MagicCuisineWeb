@@ -12,6 +12,7 @@
 }
 
 .user-container .avatar-container {
+    cursor: pointer;
     /* border: red solid 1px; */
     grid-column-end: 3;
     grid-column-start: 1;
@@ -156,6 +157,7 @@
 }
 
 .collection-container .content-collection li.item {
+    cursor: pointer;
     /* border: red solid 1px; */
     display: inline-block;
     height: 16rem;
