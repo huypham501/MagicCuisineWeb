@@ -39,64 +39,74 @@
 }
 
 .content-container .list-option-container ul.list-option li.item {
-    background-color: #FFD5C8;
     /* border: red solid 1px; */
     border-radius: 50%;
+    box-shadow: inset 0 0 0 10rem rgba(0,0,0,.3);
     cursor: pointer;
     display: inline-block;
     height: 10rem;
     width: 10rem;
 }
 
-.content-container .list-option-container ul.list-option li.item .image-container {
+.content-container .list-option-container ul.list-option li.item .option {
+    color: white;
+    font-family: "roboto-bold";
+    font-size: 1.25rem;
+    padding: 4.375rem 0;
     /* border: red solid 1px; */
-    height: 100%;
-    width: inherit;
-    position: relative;
-}
-
-.content-container .list-option-container ul.list-option li.item .image-container img.image {
-    /* border: red solid 1px; */
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 7rem;
+    text-align: center;
 }
 
 .content-container .list-option-container ul.list-option li.item-1 {
-    
+    background-color: black;
+    background-image: url(/images/pages/personalized/step-3/item-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: red solid 1px; */
     grid-column-end: 3;
     grid-column-start: 1;
 }
 
 .content-container .list-option-container ul.list-option li.item-2 {
+    background-image: url(/images/pages/personalized/step-3/item-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: red solid 1px; */
     grid-column-end: 5;
     grid-column-start: 3;
 }
 
 .content-container .list-option-container ul.list-option li.item-3 {
+    background-image: url(/images/pages/personalized/step-3/item-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: red solid 1px; */
     grid-column-end: 7;
     grid-column-start: 5;
 }
 
 .content-container .list-option-container ul.list-option li.item-4 {
+    background-image: url(/images/pages/personalized/step-3/item-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: red solid 1px; */
     grid-column-end: 9;
     grid-column-start: 7;
 }
 
 .content-container .list-option-container ul.list-option li.item-5 {
+    background-image: url(/images/pages/personalized/step-3/item-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: red solid 1px; */
     grid-column-end: 11;
     grid-column-start: 9;
 }
 
 .content-container .list-option-container ul.list-option li.item-6 {
+    background-image: url(/images/pages/personalized/step-3/item-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: red solid 1px; */
     grid-column-end: 13;
     grid-column-start: 11;

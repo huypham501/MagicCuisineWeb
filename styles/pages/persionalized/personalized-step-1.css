@@ -115,7 +115,7 @@
 .content-container .next-button-container {
     /* border: red solid 1px; */
     grid-column: 1/-1;
-    margin-top: 3rem;
+    margin-top: 4rem;
     text-align: center;
 }
 
