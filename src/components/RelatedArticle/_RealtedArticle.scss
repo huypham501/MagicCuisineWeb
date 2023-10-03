@@ -1,0 +1,65 @@
+.relate-article-container {
+
+    .title-container {
+        font-family: "Raleway";
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    .list-item-container {
+
+        ul.list-item {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            li.item {
+                background-color: #FDF2EF;
+                border-radius: 10px;
+                box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                margin-top: 1rem;
+                overflow: hidden;
+                padding: 0.5rem;
+
+                .image-container {
+                    grid-column-end: 3;
+                    grid-column-start: 1;
+
+                    img.image {
+                        object-fit: cover;
+                    }
+                }
+
+                .information-container {
+                    background-color: inherit;
+                    font-size: 0.75rem;
+                    grid-column-end: 8;
+                    grid-column-start: 3;
+                    padding: 0.5rem;
+
+                    .title {
+                        background-color: inherit;
+                        font-family: "Roboto";
+                        font-weight: bold;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .description {
+                        background-color: inherit;
+                        display: block;
+                        font-family: "Roboto";
+                        font-weight: lighter;
+                        overflow: hidden;
+                        padding-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

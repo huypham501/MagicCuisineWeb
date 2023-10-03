@@ -1,0 +1,67 @@
+.content-container.news-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .news-content-container {
+        grid-column-end: 8;
+        grid-column-start: 2;
+        margin-top: 2rem;
+
+        .date-time {
+            font-family: "Roboto";
+            font-size: 0.75rem;
+            font-weight: lighter;
+        }
+
+        .title {
+            font-family: "Roboto";
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .main-content-container .paragraph-container {
+            margin: 1.25rem 0;
+
+            .sub-title {
+                font-family: "Roboto";
+                font-weight: 500;
+                margin: 2rem 0;
+            }
+
+            .content {
+                font-family: "Roboto";
+                font-weight: lighter;
+            }
+
+            .group-image-container {
+                display: flex;
+                height: 15rem;
+
+                .image-container {
+                    margin: 0 0.25rem;
+                    width: 100%;
+
+                    img.image {
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .item-4,
+            .item-1 {
+                height: 15rem;
+
+                img.image {
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .author {
+            float: right;
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+    }
+}

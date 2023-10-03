@@ -1,0 +1,131 @@
+@use "./step-1/step-1";
+@use "./step-2/step-2";
+@use "./step-3/step-3";
+@use "./step-4/step-4";
+
+.content-container.personalized-step-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 10rem;
+
+    .title {
+        font-family: "Raleway";
+        font-size: 2rem;
+        font-weight: bold;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .list-option-container {
+        grid-column: 1/-1;
+        margin-top: 2rem;
+
+        ul.list-option {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            a {
+                margin: 1rem;
+            }
+
+        }
+
+        &.step-1 ul.list-option,
+        &.step-3 ul.list-option {
+            li.item {
+                border-radius: 50%;
+                height: 10rem;
+                overflow: hidden;
+                position: relative;
+                width: 10rem;
+
+                img {
+                    object-fit: cover;
+                }
+
+                .option {
+                    bottom: 0;
+                    box-shadow: inset 0 0 0 10rem rgba(0, 0, 0, .3);
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    left: 0;
+                    padding: 4.375rem 0;
+                    position: absolute;
+                    right: 0;
+                    text-align: center;
+                    top: 0;
+                }
+            }
+        }
+
+        &.step-2 ul.list-option,
+        &.step-4 ul.list-option {
+            li.item {
+                border-radius: 50%;
+                height: 10rem;
+                overflow: hidden;
+                position: relative;
+                width: 10rem;
+
+                div.image-wrap {
+                    height: 7rem;
+                    left: 50%;
+                    position: relative;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 7rem;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &.step-2 ul.list-option li.item {
+            background-color: #FFD5C8;
+        }
+
+        &.step-4 ul.list-option li.item {
+            background-color: #DEF5C5;
+        }
+    }
+
+    .button-container {
+        grid-column: 1/-1;
+        margin-top: 4rem;
+        text-align: center;
+
+        button {
+            margin: 0 1rem;
+
+            &.prev-button {
+                background-color: transparent;
+                background-color: white;
+                border-radius: 25px;
+                color: black;
+                cursor: pointer;
+                font-family: "Roboto";
+                font-weight: bold;
+                padding: 10px 50px;
+            }
+
+            &.next-button {
+                background-color: transparent;
+                background-color: black;
+                border-radius: 25px;
+                color: white;
+                cursor: pointer;
+                font-family: "Roboto";
+                font-weight: bold;
+                padding: 10px 50px;
+            }
+        }
+    }
+}

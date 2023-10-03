@@ -1,0 +1,133 @@
+.content-container.signup-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    left: 0;
+    margin-top: 5rem;
+    position: absolute;
+    width: 100vw;
+
+    .signup {
+        display: grid;
+        grid-column-end: 7;
+        grid-column-start: 1;
+        grid-template-columns: repeat(7, 1fr);
+
+        .signup-container {
+            grid-column-end: 7;
+            grid-column-start: 2;
+            margin: auto 0;
+
+            .title {
+                font-family: "Roboto";
+                font-size: 5.125rem;
+                font-weight: bold;
+            }
+
+            .description {
+                font-family: "Roboto";
+                font-size: 20px;
+                font-weight: lighter;
+                margin-top: 20px;
+            }
+
+            .authentication-section {
+                grid-column-end: 6;
+                grid-column-start: 2;
+                margin-top: 70px;
+
+                .input {
+                    background: transparent;
+                    border: 0;
+                    border-bottom: 2px solid black;
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                    margin-top: 40px;
+                    outline: 0;
+                    width: 100%;
+
+                    &:focus::placeholder {
+                        color: transparent;
+                    }
+
+                    &::-webkit-input-placeholder {
+                        color: black;
+                    }
+                }
+            }
+
+            .signup-button-section {
+                margin-top: 50px;
+                text-align: center;
+
+                .signup-button {
+                    background-color: black;
+                    border-radius: 25px;
+                    color: white;
+                    cursor: pointer;
+                    font-family: "Roboto";
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 10px 50px;
+                }
+            }
+
+            .social-media-icon-container {
+                display: flex;
+                flex-direction: row;
+                margin-top: 30px;
+                text-align: center;
+
+                .icon-container {
+                    cursor: pointer;
+                    display: block;
+                    height: 50px;
+                    margin: 0 15px;
+                    position: relative;
+                    width: 100%;
+
+                    .icon-image {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        display: grid;
+        grid-column-end: 13;
+        grid-column-start: 7;
+
+        .move-login-image-container {
+            height: 700px;
+            width: 100%;
+
+            img.move-login-image {
+                object-fit: cover;
+            }
+        }
+
+        a.move-login-button-container {
+            background-color: #DEF5C5;
+            padding: 5px;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            button.move-login-button {
+                background-color: transparent;
+                border: black solid 1px;
+                cursor: pointer;
+                font-family: "roboto-bold";
+                font-size: 20px;
+                letter-spacing: 3px;
+                padding: 20px 25px;
+
+                &::before {
+                    content: url(../../../public/pages/login_signup/arrow_right.svg);
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
